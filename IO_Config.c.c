@@ -97,16 +97,16 @@ void IO_DirectionSet(void)
    _TRISD7 = 1; // COL 4
 
 //LEDS
-   _TRISF0  = 0; //SYSTEMON_LED
-   _TRISF1  = 0; //ZONEISOLATED_LED
-   _TRISG0  = 0; //HOOTERFLT_LED
-   _TRISG1  = 0; //ZONECKTFLT_LED
+   _TRISF0  = 0; //ON_LED
+   _TRISF1  = 0; //_LED
+   _TRISG0  = 0; //FLT_LED
+   _TRISG1  = 0; //TFLT_LED
    _TRISA6  = 0; //BATTFLT_LED
-   _TRISA7  = 0; //ACFLT_LED
-   _TRISG12 = 0; //FIREALARM_LED
-   _TRISG13 = 0; //SILENCE_LED
-   _TRISG14 = 0; //COMMFLT_LED
-   _TRISG15 = 0; //EVACUATE_LED
+   _TRISA7  = 0; //CFLT_LED
+   _TRISG12 = 0; //M_LED
+   _TRISG13 = 0; //SE_LED
+   _TRISG14 = 0; //MFLT_LED
+   _TRISG15 = 0; //E_LED
 
 //LCD
    _TRISE0 = 0; //
