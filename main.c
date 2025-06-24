@@ -70,11 +70,7 @@ SystemInitialise();
     SetNoofBeep(3);
 AlphaNumKeypad_Init();
 //ZoneLocationDefaultSet();
-/*EEPROMWriteByte('4', ADDR_PSWD);
-EEPROMWriteByte('5', ADDR_PSWD+1);
-EEPROMWriteByte('6', ADDR_PSWD+2);
-EEPROMWriteByte('7', ADDR_PSWD+3);
-*/
+
 //PSWDExpired =TRUE;
  //_TRISB0 = 1; //ZONE 1 
 //_TRISB1 = 1; //ZONE 2 
@@ -92,16 +88,7 @@ _TRISF0  = 0;// system ON LEd
 ACFLT_LED = 1;
 BATTFLT_LED = 1;
 SYSTEMON_LED = 1;
-ADC_ChannelEnable ( ADC_CHANNEL_ZONE1 ) ;
-//ADC_ChannelEnable ( ADC_CHANNEL_ZONE2 ) ;
-//ADC_ChannelEnable ( ADC_CHANNEL_ZONE3 ) ;
-/*ADC_ChannelEnable ( ADC_CHANNEL_ZONE4 ) ;
-ADC_ChannelEnable ( ADC_CHANNEL_ZONE5 ) ;
-ADC_ChannelEnable ( ADC_CHANNEL_ZONE6 ) ;
-ADC_ChannelEnable ( ADC_CHANNEL_ZONE7 ) ;
-ADC_ChannelEnable ( ADC_CHANNEL_ZONE8 ) ;
-ADC_ChannelEnable ( ADC_CHANNEL_HOOTER_1 ) ;
-*/
+
 ADC_ChannelEnable ( ADC_CHANNEL_BATTERY ) ;
 ADC_ChannelEnable ( ADC_CHANNEL_11);
 ADCInit();
